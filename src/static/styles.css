@@ -28,6 +28,21 @@ header h1 {
   margin-bottom: 10px;
 }
 
+.auth-controls {
+  align-items: center;
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  margin-top: 16px;
+}
+
+.auth-controls button {
+  background-color: #8bc34a;
+  color: #17320a;
+  font-size: 14px;
+  padding: 8px 12px;
+}
+
 main {
   display: flex;
   flex-wrap: wrap;
@@ -190,6 +205,45 @@ button:hover {
 
 .hidden {
   display: none;
+}
+
+dialog {
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.25);
+  margin: auto;
+  padding: 24px;
+  width: min(90vw, 380px);
+}
+
+dialog::backdrop {
+  background: rgba(0, 0, 0, 0.45);
+}
+
+dialog h3 {
+  color: #1a237e;
+  margin-bottom: 18px;
+}
+
+dialog label {
+  display: block;
+  font-weight: bold;
+  margin: 12px 0 5px;
+}
+
+dialog input {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+  padding: 10px;
+  width: 100%;
+}
+
+.dialog-actions {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+  margin-top: 20px;
 }
 
 footer {
